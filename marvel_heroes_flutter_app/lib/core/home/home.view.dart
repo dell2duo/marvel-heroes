@@ -178,36 +178,39 @@ class HomeView extends StatelessWidget {
           ),
           SizedBox(
             height: 230,
-            child: ListView(
+            child: GridView.count(
               clipBehavior: Clip.none,
               scrollDirection: Axis.horizontal,
-              padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+              crossAxisCount: 1,
+              mainAxisSpacing: 16,
+              childAspectRatio: 1.7,
+              padding: const EdgeInsets.only(left: 24, right: 24),
               children: <Widget>[
-                HeroCard(
+                CharacterCard(
+                  name: "Peter Parker",
+                  heroName: "Homem Aranha",
+                  image: "/chars/spider-man.png",
+                  onTap: () {},
+                ),
+                CharacterCard(
+                  name: "Peter Parker",
+                  heroName: "Homem Aranha",
+                  image: "./assets/images/chars/spider-man.png",
+                  onTap: () {},
+                ),
+                CharacterCard(
+                  name: "Peter Parker",
+                  heroName: "Homem Aranha",
+                  image: "../assets/images/chars/spider-man.png",
+                  onTap: () {},
+                ),
+                CharacterCard(
                   name: "Peter Parker",
                   heroName: "Homem Aranha",
                   image: "assets/images/chars/spider-man.png",
                   onTap: () {},
                 ),
-                HeroCard(
-                  name: "Peter Parker",
-                  heroName: "Homem Aranha",
-                  image: "assets/images/chars/spider-man.png",
-                  onTap: () {},
-                ),
-                HeroCard(
-                  name: "Peter Parker",
-                  heroName: "Homem Aranha",
-                  image: "assets/images/chars/spider-man.png",
-                  onTap: () {},
-                ),
-                HeroCard(
-                  name: "Peter Parker",
-                  heroName: "Homem Aranha",
-                  image: "assets/images/chars/spider-man.png",
-                  onTap: () {},
-                ),
-                HeroCard(
+                CharacterCard(
                   name: "Peter Parker",
                   heroName: "Homem Aranha",
                   image: "assets/images/chars/spider-man.png",
@@ -215,7 +218,47 @@ class HomeView extends StatelessWidget {
                 ),
               ],
             ),
-          ),
+          )
+          // SizedBox(
+          //   height: 230,
+          //   child: ListView(
+          //     clipBehavior: Clip.none,
+          //     scrollDirection: Axis.horizontal,
+          //     padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+          //     children: <Widget>[
+          //       HeroCard(
+          //         name: "Peter Parker",
+          //         heroName: "Homem Aranha",
+          //         image: "/chars/spider-man.png",
+          //         onTap: () {},
+          //       ),
+          //       HeroCard(
+          //         name: "Peter Parker",
+          //         heroName: "Homem Aranha",
+          //         image: "./assets/images/chars/spider-man.png",
+          //         onTap: () {},
+          //       ),
+          //       HeroCard(
+          //         name: "Peter Parker",
+          //         heroName: "Homem Aranha",
+          //         image: "../assets/images/chars/spider-man.png",
+          //         onTap: () {},
+          //       ),
+          //       HeroCard(
+          //         name: "Peter Parker",
+          //         heroName: "Homem Aranha",
+          //         image: "assets/images/chars/spider-man.png",
+          //         onTap: () {},
+          //       ),
+          //       HeroCard(
+          //         name: "Peter Parker",
+          //         heroName: "Homem Aranha",
+          //         image: "assets/images/chars/spider-man.png",
+          //         onTap: () {},
+          //       ),
+          //     ],
+          //   ),
+          // ),
         ],
       ),
     );

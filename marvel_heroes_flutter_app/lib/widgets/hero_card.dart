@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:marvel_heroes_flutter_app/config/themes/light/text.styles.dart';
 
-class HeroCard extends StatelessWidget {
+class CharacterCard extends StatelessWidget {
   final String name;
   final String heroName;
   final String image;
   final VoidCallback onTap;
-  const HeroCard({
+  const CharacterCard({
     Key? key,
     required this.name,
     required this.heroName,
@@ -21,7 +21,7 @@ class HeroCard extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         primary: Colors.transparent,
         padding: const EdgeInsets.all(0),
-        elevation: 10,
+        elevation: 8,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20.0),
         ),
@@ -33,7 +33,7 @@ class HeroCard extends StatelessWidget {
             width: 140,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.white,
+              color: Colors.black,
               image: DecorationImage(
                 image: AssetImage(image),
                 fit: BoxFit.cover,
