@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:marvel_heroes_flutter_app/core/home/home.view.dart';
+import 'package:marvel_heroes_flutter_app/core/home/home_view.dart';
 import 'routes.constants.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {

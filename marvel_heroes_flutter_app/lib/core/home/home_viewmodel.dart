@@ -13,7 +13,7 @@ class HomeViewModel {
 
   Future<bool> getCategories() async {
     isBuildIn.add(false);
-    await Future.delayed(const Duration(seconds: 1));
+    // await Future.delayed(const Duration(seconds: 1));
     isBuildIn.add(true);
     return true;
   }
