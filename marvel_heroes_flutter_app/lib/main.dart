@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:marvel_heroes_flutter_app/config/routes/routes.constants.dart';
+import 'package:marvel_heroes_flutter_app/locator.dart';
 import 'config/routes/router.dart' as router;
 
 void main() {
+  setup();
   runApp(const MyApp());
 }
 
